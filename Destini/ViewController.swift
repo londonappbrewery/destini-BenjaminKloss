@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: UIButton) {
         
         if sender.tag == 1 {
-            if storyIndex == 1 || storyIndex == 2 {
+            if storyIndex < 3 {
                 storyIndex = 3
                 storyTextView.text = story3
                 topButton.setTitle(answer3a, for: .normal)
